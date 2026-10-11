@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Erasyl Nuraddinov — Portfolio</title>
+  <meta name="description" content="Portfolio of Erasyl Nuraddinov: IT Management student at KBTU, mathematics curator and aspiring developer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    /* Apply saved theme before paint to avoid a flash */
+    try {
+      var t = localStorage.getItem('theme');
+      if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.theme = t;
+    } catch (e) { document.documentElement.dataset.theme = 'light'; }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#about"><img class="logo" src="assets/logo.jpg" width="40" height="40" alt=""><span>Erasyl N.</span></a>
+
+      <nav aria-label="Main">
+        <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-list">
+          Menu
+        </button>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode">
+        <span id="theme-label">Dark</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="about" aria-labelledby="about-title">
+      <div class="hero">
+        <div class="container about-grid">
+          <img class="avatar" src="assets/photo.jpg" width="240" height="240"
+               alt="Portrait of Erasyl Nuraddinov, arms crossed, wearing a black shirt">
+          <div>
+            <p class="kicker">IT Management Student | Mathematics Curator | Aspiring Developer</p>
+            <h1 id="about-title">Erasyl Nuraddinov</h1>
+            <p class="lead">I bring together technology, mathematics and education to build useful digital solutions.</p>
+            <div class="actions">
+              <a class="btn" href="#projects">View projects</a>
+              <a class="btn btn-ghost" href="#contact">Contact me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section about-body">
+        <div class="container">
+          <h2>About Me</h2>
+          <div class="about-text">
+            <p>Hello! My name is Erasyl Nuraddinov. I come from Kazaly District in the Kyzylorda Region of Kazakhstan. I study IT Management at Kazakh-British Technical University (KBTU) and work as a mathematics curator at JUZ40 Online.</p>
+            <p>My interests bring together technology, mathematics, and education. I enjoy solving problems, learning new skills, and helping students become more confident in mathematics.</p>
+          </div>
+
+          <div class="about-cols">
+            <article class="panel">
+              <h3>Work Experience</h3>
+              <h4>Mathematics Curator — JUZ40 Online</h4>
+              <p>As a mathematics curator, I support students throughout their learning journey. I help them understand challenging topics, stay motivated, and work towards their academic goals. This role helps me develop my communication, teamwork, and organizational skills.</p>
+            </article>
+
+            <article class="panel">
+              <h3>Technical Skills</h3>
+              <ul class="skill-list">
+                <li><strong>Python:</strong> Writing programs and solving computational problems.</li>
+                <li><strong>C++:</strong> Applying programming fundamentals and developing algorithms.</li>
+                <li><strong>Mathematics:</strong> Using logical thinking and structured approaches to solve problems.</li>
+                <li><strong>Student Support:</strong> Explaining ideas clearly and encouraging progress.</li>
+              </ul>
+            </article>
+
+            <article class="panel">
+              <h3>My Approach</h3>
+              <p>I believe that progress comes from consistent effort and a willingness to learn. Whether I am working on a programming task or supporting a student, I aim to make complex ideas easier to understand and turn challenges into opportunities to improve.</p>
+            </article>
+
+            <article class="panel">
+              <h3>My Goals</h3>
+              <p>My goal is to strengthen my programming skills and gain practical experience in IT. I would like to combine my background in mathematics and education with technology to create useful digital solutions that help people learn and grow.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title">Projects</h2>
+        <p class="section-intro">Things I built during Weeks 1–4 of the course.</p>
+
+        <div class="projects-grid">
+          <article class="card">
+            <h3>TODO: Project 1 name</h3>
+            <p>TODO: 1–2 sentences — what it is and what you built.</p>
+            <p class="tags">TODO: tools used</p>
+            <a class="card-link" href="https://TODO-link-1" target="_blank" rel="noopener">View project<span class="visually-hidden"> TODO: Project 1 name (opens in a new tab)</span></a>
+          </article>
+
+          <article class="card">
+            <h3>TODO: Project 2 name</h3>
+            <p>TODO: 1–2 sentences — what it is and what you built.</p>
+            <p class="tags">TODO: tools used</p>
+            <a class="card-link" href="https://TODO-link-2" target="_blank" rel="noopener">View project<span class="visually-hidden"> TODO: Project 2 name (opens in a new tab)</span></a>
+          </article>
+
+          <article class="card">
+            <h3>TODO: Project 3 name</h3>
+            <p>TODO: 1–2 sentences — what it is and what you built.</p>
+            <p class="tags">TODO: tools used</p>
+            <a class="card-link" href="https://TODO-link-3" target="_blank" rel="noopener">View project<span class="visually-hidden"> TODO: Project 3 name (opens in a new tab)</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div>
+          <h2 id="contact-title">Contact</h2>
+          <p class="section-intro">Have a question or an idea? Send me a message here, or reach me directly.</p>
+
+          <form id="contact-form" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" aria-describedby="name-error">
+              <p class="error" id="name-error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" aria-describedby="email-error">
+              <p class="error" id="email-error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" aria-describedby="message-error"></textarea>
+              <p class="error" id="message-error" role="alert"></p>
+            </div>
+
+            <button class="btn" type="submit">Send message</button>
+            <p class="success" id="form-success" role="status"></p>
+          </form>
+        </div>
+
+        <aside class="reach" aria-labelledby="reach-title">
+          <h3 id="reach-title">Reach me directly</h3>
+          <ul class="social">
+            <li>
+              <a href="https://wa.me/77761595525" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 3.2 17.3L2 22l4.8-1.2A11 11 0 1 0 20.5 3.5Zm-8.5 17a9 9 0 0 1-4.6-1.3l-.3-.2-2.8.7.8-2.7-.2-.3a9 9 0 1 1 7.1 3.8Zm5-6.7c-.3-.1-1.6-.8-1.9-.9s-.5-.1-.6.1-.7.9-.9 1.1-.3.2-.6.1a7.4 7.4 0 0 1-3.7-3.2c-.3-.5.3-.5.8-1.5a.5.5 0 0 0 0-.5l-.9-2.1c-.2-.5-.5-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.800 11.800 0 0 0 4.500 3.900c1.700.7 2.300.8 3.200.7a2.700 2.700 0 0 0 1.800-1.300 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.6-.3Z"/></svg>
+                <span>WhatsApp<span class="visually-hidden"> (opens in a new tab)</span></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://t.me/NURADDINOV27" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.900 3.300 2.800 10.700c-1.300.5-1.300 1.300-.2 1.600l4.900 1.500 1.900 5.800c.2.600.1.800.7.800.5 0 .7-.2 1-.5l2.400-2.300 4.900 3.600c.9.500 1.500.2 1.700-.8l3.200-15.200c.3-1.300-.5-1.900-1.400-1.400ZM8.200 13.200l9.700-6.100c.5-.3.9-.1.5.2l-8.300 7.500-.3 3.400-1.600-5Z"/></svg>
+                <span>Telegram: @NURADDINOV27<span class="visually-hidden"> (opens in a new tab)</span></span>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+77761595525">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.600 10.800a15.100 15.100 0 0 0 6.600 6.600l2.200-2.200a1 1 0 0 1 1-.25 11.400 11.400 0 0 0 3.600.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.500a1 1 0 0 1 1 1c0 1.250.2 2.450.57 3.570a1 1 0 0 1-.25 1Z"/></svg>
+                <span>8 776 159 55 25</span>
+              </a>
+            </li>
+          </ul>
+
+          <figure class="qr-card">
+            <img src="assets/telegram-qr.svg" width="176" height="176" alt="QR code that opens the Telegram profile @NURADDINOV27">
+            <figcaption>Scan to open my Telegram</figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Erasyl Nuraddinov. Built with plain HTML, CSS and JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
